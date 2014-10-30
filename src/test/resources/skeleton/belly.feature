@@ -10,6 +10,7 @@ Feature: Belly
         | food   |
         | cookie |
         | pizza  |
+        | rotten tomatoes  |
 
     @XZA
     Scenario: I tag

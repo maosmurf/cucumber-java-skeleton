@@ -15,6 +15,11 @@ public class Stepdefs
     @When("^I eat (.*)$")
     public void iEatFood(String food) throws Throwable
     {
+        if (food.contains("rotten"))
+        {
+            throw new AssertionError("Won't eat this: " + food);
+        }
+
         System.out.println(String.format("I eat %s", food));
     }
 
